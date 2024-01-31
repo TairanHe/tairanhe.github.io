@@ -1,0 +1,37 @@
+_site
+./_site
+# Ignore compiled and generated files
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+
+# Ignore local development files
+.env
+.DS_Store
+
+# Ignore GitHub Pages generated site
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata
+
+# Ignore Jekyll settings
+/_config.yml
+Gemfile
+Gemfile.lock
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore other development tools
+.sass-cache/
+.jekyll-plugins/
+.jekyll-versions/
+
+# Ignore test and documentation files
+/_tests/
+/docs/
+*.md
