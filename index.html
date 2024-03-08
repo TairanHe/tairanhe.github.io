@@ -114,7 +114,43 @@
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
   <tr><td><sectionheading>&nbsp;&nbsp;Publications</sectionheading></td></tr>
 </table>
+
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://human2humanoid.com/">
+    <video playsinline autoplay loop muted src="images/h2o/h2o-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://human2humanoid.com/" id="H2O">
+      <heading>Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation</heading></a><br>
+      Tairan He*, Zhengyi Luo*, Wenli Xiao, Chong Zhang, Kris Kitani, Changliu Liu, Guanya Shi  <br>
+      2024<br>
+      </p>
+
+      <div class="paper" id="h2o">
+      <a href="https://human2humanoid.com/">webpage</a> |
+      <a href="https://human2humanoid.com/resources/H2O_paper.pdf">pdf</a> |
+      <a href="javascript:toggleblock('h2o_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('h2o')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2403.04436">arXiv</a> |
+      <a href="https://www.youtube.com/watch?v=0W4N2q7xtcQ&ab_channel=LeCARLabatCMU">video</a>
+
+      
+
+      <p align="justify"> <i id="h2o_abs">We present <span style="color: Red;">H</span>uman <span style="color: Red;">to</span> Human<span style="color: Red;">o</span>id (<strong>H2O</strong>), a reinforcement learning (RL) based framework that enables real-time whole-body teleoperation of a full-sized humanoid robot with only an RGB camera. To create a large-scale retargeted motion dataset of human movements for humanoid robots, we propose a scalable ''sim-to-data" process to filter and pick feasible motions using a privileged motion imitator. Afterwards, we train a robust real-time humanoid motion imitator in simulation using these refined motions and transfer it to the real humanoid robot in a zero-shot manner. We successfully achieve teleoperation of dynamic whole-body motions in real-world scenarios, including walking, back jumping, kicking, turning, waving, pushing, boxing, etc. To the best of our knowledge, this is the first demonstration to achieve learning-based real-time whole-body humanoid teleoperation.</i></p>
+
+<pre xml:space="preserve">
+@inproceedings{he2024learning,
+  author    = {He, Tairan and Luo, Zhengyi and Xiao, Wenli and Zhang, Chong and Kitani, Kris and Liu, Changliu and Shi, Guanya},
+  title     = {Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation},
+  booktitle = {arXiv},
+  year      = {2024},
+}
+</pre>
+      </div>
+    </td>
+  </tr>
+
   <tr>
     <td width="40%" valign="top" align="center"><a href="https://agile-but-safe.github.io/">
     <video playsinline autoplay loop muted src="images/agile-but-safe/abs-gif-preview-long.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
@@ -661,6 +697,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('navloco_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('h2o_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('agile-but-safe_abs');
