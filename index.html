@@ -121,6 +121,42 @@
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
   <tr>
+    <td width="40%" valign="top" align="center"><a href="https://omni.human2humanoid.com/">
+    <video playsinline autoplay loop muted src="images/omnih2o/Preview-OmniH2O.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://omni.human2humanoid.com/" id="H2O">
+      <heading>OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning</heading></a><br>
+      Tairan He*, Zhengyi Luo*, Xialin He*, Wenli Xiao, Chong Zhang, Weinan Zhang, Kris Kitani, Changliu Liu, Guanya Shi  <br>
+      2024<br>
+      </p>
+
+      <div class="paper" id="omnih2o">
+      <a href="https://omni.human2humanoid.com/">webpage</a> |
+      <a href="https://omni.human2humanoid.com/resources/OmniH2O_paper.pdf">pdf</a> |
+      <a href="javascript:toggleblock('omni_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('omnih2o')" class="togglebib">bibtex</a> |
+      <!-- <a href="https://arxiv.org/abs/2403.04436">arXiv</a> | -->
+      <a href="https://www.youtube.com/watch?v=ofgxZHv0GMk">video</a> |
+
+      
+
+      <p align="justify"> <i id="omnih2o_abs">We present OmniH2O (Omni Human-to-Humanoid), a learning-based system for whole-body humanoid teleoperation and autonomy. Using kinematic pose as a universal control interface, OmniH2O enables various ways for a human to control a full-sized humanoid with dexterous hands, including using real-time teleoperation through VR headset, verbal instruction, and RGB camera. OmniH2O also enables full autonomy by learning from teleoperated demonstrations or integrating with frontier models such as GPT-4. OmniH2O demonstrates versatility and dexterity in various real-world whole-body tasks through teleoperation or autonomy, such as playing multiple sports, moving and manipulating objects, and interacting with humans. We develop an RL-based sim-to-real pipeline, which involves large-scale retargeting and augmentation of human motion datasets, learning a real-world deployable policy with sparse sensor input by imitating a privileged teacher policy, and reward designs to enhance robustness and stability. We release the first humanoid whole-body control dataset, OmniH2O-6, containing six everyday tasks, and demonstrate humanoid whole-body skill learning from teleoperated datasets.</i></p>
+
+<pre xml:space="preserve">
+  @inproceedings{he2024omnih2o,
+    author    = {He, Tairan and Luo, Zhengyi and He, Xialin and Xiao, Wenli and Zhang, Chong and Zhang, Weinan and Kitani, Kris and Liu, Changliu and Shi, Guanya},
+    title     = {OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning},
+    booktitle = {arXiv},
+    year      = {2024},
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+  <tr>
     <td width="40%" valign="top" align="center"><a href="https://human2humanoid.com/">
     <video playsinline autoplay loop muted src="images/h2o/h2o-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
     </a></td>
@@ -704,6 +740,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('navloco_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('omnih2o_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('h2o_abs');
