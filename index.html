@@ -120,6 +120,40 @@
 </table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://hover-versatile-humanoid.github.io/">
+    <video playsinline autoplay loop muted src="images/hover/HOVER-Teaser-preview-720.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://hover-versatile-humanoid.github.io/" id="HOVER">
+      <heading>HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots</heading></a><br>
+      Tairan He*, Wenli Xiao*, Toru Lin, Zhengyi Luo, Zhengjia Xu, Zhenyu Jiang, Jan Kautz, Changliu Liu, Guanya Shi, Xiaolong Wang, Linxi "Jim" Fan†, Yuke Zhu† <br>
+      CoRL 2024<br>
+      </p>
+      <div class="paper" id="hover">
+      <a href="https://hover-versatile-humanoid.github.io/">webpage</a> |
+      <a href="https://hover-versatile-humanoid.github.io/resources/HOVER_paper.pdf">pdf</a> |
+      <a href="javascript:toggleblock('hover_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('hover')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2410.21229">arXiv</a> 
+
+      
+
+      <p align="justify"> <i id="hover_abs">Humanoid whole-body control requires adapting to diverse tasks such as navigation, loco-manipulation, and tabletop manipulation, each demanding a different mode of control. For example, navigation relies on root velocity tracking, while tabletop manipulation prioritizes upper-body joint angle tracking. Existing approaches typically train individual policies tailored to a specific command space, limiting their transferability across modes. We present the key insight that full-body kinematic motion imitation can serve as a common abstraction for all these tasks and provide general-purpose motor skills for learning multiple modes of whole-body control. Building on this, we propose HOVER (Humanoid Versatile Controller), a multi-mode policy distillation framework that consolidates diverse control modes into a unified policy. HOVER enables seamless transitions between control modes while preserving the distinct advantages of each, offering a robust and scalable solution for humanoid control across a wide range of modes. By eliminating the need for policy retraining for each control mode, our approach improves efficiency and flexibility for future humanoid applications.</i></p>
+
+<pre xml:space="preserve">
+@article{he2024hover,
+  title={HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots},
+  author={He, Tairan and Xiao, Wenli and Lin, Toru and Luo, Zhengyi and Xu, Zhenjia and Jiang, Zhenyu and Kautz, Jan and Liu, Changliu and Shi, Guanya and Wang, Xiaolong and Fan, Linxi and Zhu, Yuke},
+  journal={arXiv preprint arXiv:2410.21229},
+  year={2024}
+}
+</pre>
+      </div>
+    </td>
+  </tr>
+
   <tr>
     <td width="40%" valign="top" align="center"><a href="https://omni.human2humanoid.com/">
     <video playsinline autoplay loop muted src="images/omnih2o/Preview-OmniH2O.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
@@ -790,6 +824,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('omnih2o_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('hover_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('h2o_abs');
