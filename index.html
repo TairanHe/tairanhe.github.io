@@ -86,7 +86,7 @@
   <tr>
     <td width="30%" valign="top"><a href="images/tairan&h1_crop.JPG"><img src="images/tairan&h1_crop.JPG" width="100%" style="border-radius:15px"></a>
     <p align=center>
-    | <a href="data/TairanHe_CV_20250215.pdf">CV</a> |
+    | <a href="data/TairanHe_CV_20250427.pdf">CV</a> |
     <a href="mailto:tairanh@andrew.cmu.edu">Email</a> |
     <a href="https://scholar.google.com/citations?user=TVWH2U8AAAAJ">Google Scholar</a> |
     <br/>
@@ -143,6 +143,41 @@
 </table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://human-as-robot.github.io/">
+    <video playsinline autoplay loop muted src="images/hat/hat_demo.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://human-as-robot.github.io/" id="HAT">
+      <heading>Humanoid Policy ~ Human Policy</heading></a><br>
+      Ri-Zhao Qiu*, Shiqi Yang*, Xuxin Cheng*, Chaitanya Chawla, Jialong Li, Tairan He, Ge Yan, David J. Yoon, Ryan Hoque, Lars Paulsen, Ge Yang, Jian Zhang, Sha Yi, Guanya Shi, Xiaolong Wang<br>
+      2025<br>
+      </p>
+      <div class="paper" id="hat">
+      <a href="https://human-as-robot.github.io/">webpage</a> |
+      <a href="https://arxiv.org/pdf/2503.13441">pdf</a> |
+      <a href="javascript:toggleblock('hat_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('hat')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2503.13441">arXiv</a> |
+      <a href="https://github.com/RogerQi/human-policy">code</a> 
+
+      
+
+      <p align="justify"> <i id="hat_abs">Training manipulation policies for humanoid robots with diverse data enhance their robustness and generalization across tasks and platforms. However, learning solely from robot demonstrations is labor-intensive, requiring expensive tele-operated data collection which is difficult to scale. This paper investigates a more scalable data source, egocentric human demonstrations, to serve as cross-embodiment training data for robot learning. We mitigate the embodiment gap between humanoids and humans from both the data and modeling perspectives. We collect an egocentric task-oriented dataset (PH2D) that is directly aligned with humanoid manipulation demonstrations. We then train a human-humanoid behavior policy, which we term Human Action Transformer (HAT). The state-action space of HAT is unified for both humans and humanoid robots and can be differentiably retargeted to robot actions. Co-trained with smaller-scale robot data, HAT directly models humanoid robots and humans as different embodiments without additional supervision. We show that human data improves both generalization and robustness of HAT with significantly better data collection efficiency.</i></p>
+
+<pre xml:space="preserve">
+  @article{qiu2025-humanpolicy,
+    title={Humanoid Policy \~{} Human Policy},
+    author={Ri-Zhao Qiu and Shiqi Yang and Xuxin Cheng and Chaitanya Chawla and Jialong Li and Tairan He and Ge Yan and David J. Yoon and Ryan Hoque and Lars Paulsen and Ge Yang and Jian Zhang and Sha Yi and Guanya Shi and Xiaolong Wang},
+    journal={arXiv preprint arXiv:2503.13441},
+    year={2025}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
 
   <tr>
     <td width="40%" valign="top" align="center"><a href="https://agile.human2humanoid.com/">
@@ -212,6 +247,42 @@
       </div>
     </td>
   </tr>
+
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://adaptive-safe-locomotion.github.io/">
+    <video playsinline autoplay loop muted src="images/bas/bas_slope_safe_2.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://adaptive-safe-locomotion.github.io/" id="BAS">
+      <heading>	Bridging Adaptivity and Safety: Learning Agile Collision-Free Locomotion Across Varied Physics</heading></a><br>
+      Yichao Zhong, Chong Zhang, Tairan He, Guanya Shi<br>
+      L4DC 2025<br>
+      </p>
+      <div class="paper" id="hover">
+      <a href="https://adaptive-safe-locomotion.github.io/">webpage</a> |
+      <a href="https://arxiv.org/pdf/2501.04276">pdf</a> |
+      <a href="javascript:toggleblock('bas_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('bas')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2501.04276">arXiv</a> |
+      <a href="https://github.com/z-taylcr7/BAS_official">code</a> 
+
+      
+
+      <p align="justify"> <i id="bas_abs">Real-world legged locomotion systems often need to reconcile agility and safety for different scenarios. Moreover, the underlying dynamics are often unknown and time-variant (e.g., payload, friction). In this paper, we introduce BAS (Bridging Adaptivity and Safety), which builds upon the pipeline of prior work Agile But Safe (ABS)(He et al.) and is designed to provide adaptive safety even in dynamic environments with uncertainties. BAS involves an agile policy to avoid obstacles rapidly and a recovery policy to prevent collisions, a physical parameter estimator that is concurrently trained with agile policy, and a learned control-theoretic RA (reach-avoid) value network that governs the policy switch. Also, the agile policy and RA network are both conditioned on physical parameters to make them adaptive. To mitigate the distribution shift issue, we further introduce an on-policy fine-tuning phase for the estimator to enhance its robustness and accuracy. The simulation results show that BAS achieves 50% better safety than baselines in dynamic environments while maintaining a higher speed on average. In real-world experiments, BAS shows its capability in complex environments with unknown physics (e.g., slippery floors with unknown frictions, unknown payloads up to 8kg), while baselines lack adaptivity, leading to collisions or. degraded agility. As a result, BAS achieves a 19.8% increase in speed and gets a 2.36 times lower collision rate than ABS in the real world.</i></p>
+
+<pre xml:space="preserve">
+@article{zhong2025bridging,
+  title={Bridging Adaptivity and Safety: Learning Agile Collision-Free Locomotion Across Varied Physics},
+  author={Zhong, Yichao and Zhang, Chong and He, Tairan and Shi, Guanya},
+  journal={arXiv preprint arXiv:2501.04276},
+  year={2025}
+}
+</pre>
+      </div>
+    </td>
+  </tr>
+
 
   <tr>
     <td width="40%" valign="top" align="center"><a href="https://omni.human2humanoid.com/">
@@ -890,10 +961,16 @@ hideallbibs();
   hideblock('omnih2o_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
+  hideblock('bas_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
   hideblock('hover_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('asap_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('hat_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('h2o_abs');
