@@ -35,3 +35,7 @@ Gemfile.lock
 /_tests/
 /docs/
 *.md
+
+
+vendor/
+.bundle/
