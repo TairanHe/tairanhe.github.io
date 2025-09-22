@@ -86,7 +86,7 @@
   <tr>
     <td width="30%" valign="top"><a href="images/tairan&h1_crop.JPG"><img src="images/tairan&h1_crop.JPG" width="100%" style="border-radius:15px"></a>
     <p align=center>
-    | <a href="data/TairanHe_CV_20250427.pdf">CV</a> |
+    | <a href="data/TairanHe_CV_20250922.pdf">CV</a> |
     <a href="mailto:tairanh@andrew.cmu.edu">Email</a> |
     <a href="https://scholar.google.com/citations?user=TVWH2U8AAAAJ">Google Scholar</a> |
     <br/>
@@ -157,6 +157,128 @@
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
 
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://hdmi-humanoid.github.io/#/">
+    <video playsinline autoplay loop muted src="images/hdmi/suitcase-D9lPef67.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://hdmi-humanoid.github.io/#/" id="HDMI">
+      <heading>HDMI: Learning Interactive Humanoid Whole-Body Control from Human Videos</heading></a><br>
+      Haoyang Weng, Yitang Li, Nikhil Sobanbabu, Zihan Wang, Zhengyi Luo, Tairan He, Deva Ramanan, Guanya Shi<br>
+      2025<br>
+      </p>
+      <div class="paper" id="pdc">
+      <a href="https://hdmi-humanoid.github.io/#/">webpage</a> |
+      <a href="https://hdmi-humanoid.github.io/#/">pdf</a> |
+      <a href="javascript:toggleblock('hdmi_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('hdmi')" class="togglebib">bibtex</a> |
+      <a href="https://hdmi-humanoid.github.io/#/">arXiv</a>  |
+      <a href="https://github.com/LeCAR-Lab/HDMI">code</a> 
+
+      
+
+      <p align="justify"> <i id="hdmi_abs">Enabling robust whole-body humanoid-object interaction (HOI) remains challenging due to motion data scarcity and the contact-rich nature. We present HDMI (HumanoiD iMitation for Interaction), a simple and general framework that learns whole-body humanoid-object interaction skills directly from monocular RGB videos. Our pipeline (i) extracts and retargets human and object trajectories from unconstrained videos to build structured motion datasets, (ii) trains a reinforcement learning (RL) policy to co-track robot and object states with three key designs: a unified object representation, a residual action space, and a general interaction reward, and (iii) zero-shot deploys the RL policies on real humanoid robots. Extensive sim-to-real experiments on a Unitree G1 humanoid demonstrate the robustness and generality of our approach: HDMI achieves 67 consecutive door traversals and successfully performs 6 distinct loco-manipulation tasks in the real world and 14 tasks in simulation. Our results establish HDMI as a simple and general framework for acquiring interactive humanoid skills from human videos.</i></p>
+
+<pre xml:space="preserve">
+  @article{
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://lecar-lab.github.io/falcon-humanoid/">
+    <video playsinline autoplay loop muted src="images/falcon/heavy_lifting_falcon_mask_h264.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://lecar-lab.github.io/falcon-humanoid/" id="FALCON">
+      <heading>FALCON: Learning Force-Adaptive Humanoid Loco-Manipulation</heading></a><br>
+      Yuanhang Zhang, Yifu Yuan, Prajwal Gurunath, Tairan He, Shayegan Omidshafiei, Ali-akbar Agha-mohammadi, Marcell Vazquez-Chanlatte, Liam Pedersen, Guanya Shi<br>
+      2025<br>
+      </p>
+      <div class="paper" id="falcon">
+      <a href="https://lecar-lab.github.io/falcon-humanoid/">webpage</a> |
+      <a href="https://arxiv.org/abs/2505.06776">pdf</a> |
+      <a href="javascript:toggleblock('falcon_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('falcon')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2505.06776">arXiv</a> |
+      <a href="https://github.com/LeCAR-Lab/FALCON">code</a> 
+
+      
+
+      <p align="justify"> <i id="falcon_abs">Humanoid loco-manipulation holds transformative potential for daily service and industrial tasks, yet achieving precise, robust whole-body control with 3D end-effector force interaction remains a major challenge. Prior approaches are often limited to lightweight tasks or quadrupedal/wheeled platforms. To overcome these limitations, we propose FALCON, a dual-agent reinforcement-learning-based framework for robust force-adaptive humanoid loco-manipulation. FALCON decomposes whole-body control into two specialized agents: (1) a lower-body agent ensuring stable locomotion under external force disturbances, and (2) an upper-body agent precisely tracking end-effector positions with implicit adaptive force compensation. These two agents are jointly trained in simulation with a force curriculum that progressively escalates the magnitude of external force exerted on the end effector while respecting torque limits. Experiments demonstrate that, compared to the baselines, FALCON achieves 2x more accurate upper-body joint tracking, while maintaining robust locomotion under force disturbances and achieving faster training convergence. Moreover, FALCON enables policy training without embodiment-specific reward or curriculum tuning. Using the same training setup, we obtain policies that are deployed across multiple humanoids, enabling forceful loco-manipulation tasks such as transporting payloads (0-20N force), cart-pulling (0-100N), and door-opening (0-40N) in the real world.</i></p>
+
+<pre xml:space="preserve">
+  @article{zhang2025falcon,
+    title={FALCON: Learning Force-Adaptive Humanoid Loco-Manipulation},
+    author={Zhang, Yuanhang and Yuan, Yifu and Gurunath, Prajwal and He, Tairan and Omidshafiei, Shayegan and Agha-mohammadi, Ali-akbar and Vazquez-Chanlatte, Marcell and Pedersen, Liam and Shi, Guanya},
+    journal={arXiv preprint arXiv:2505.06776},
+    year={2025}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+
+
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://www.zhengyiluo.com/PDC-Site/">
+    <video playsinline autoplay loop muted src="images/pdc/kitchen.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://www.zhengyiluo.com/PDC-Site/" id="PDC">
+      <heading>Emergent Active Perception and Dexterity of Simulated Humanoids from Visual Reinforcement Learning</heading></a><br>
+      Zhengyi Luo, Chen Tessler, Toru Lin, Ye Yuan, Tairan He, Wenli Xiao, Yunrong Guo, Gal Chechik, Kris Kitani, Linxi Fan, Yuke Zhu<br>
+      2025<br>
+      </p>
+      <div class="paper" id="pdc">
+      <a href="https://www.zhengyiluo.com/PDC-Site/">webpage</a> |
+      <a href="https://arxiv.org/abs/2505.12278">pdf</a> |
+      <a href="javascript:toggleblock('pdc_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('pdc')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2505.12278">arXiv</a> 
+
+      
+
+      <p align="justify"> <i id="pdc_abs">Human behavior is fundamentally shaped by visual perception -- our ability to interact with the world depends on actively gathering relevant information and adapting our movements accordingly. Behaviors like searching for objects, reaching, and hand-eye coordination naturally emerge from the structure of our sensory system. Inspired by these principles, we introduce Perceptive Dexterous Control (PDC), a framework for vision-driven dexterous whole-body control with simulated humanoids. PDC operates solely on egocentric vision for task specification, enabling object search, target placement, and skill selection through visual cues, without relying on privileged state information (e.g., 3D object positions and geometries). This perception-as-interface paradigm enables learning a single policy to perform multiple household tasks, including reaching, grasping, placing, and articulated object manipulation. We also show that training from scratch with reinforcement learning can produce emergent behaviors such as active search. These results demonstrate how vision-driven control and complex tasks induce human-like behaviors and can serve as the key ingredients in closing the perception-action loop for animation, robotics, and embodied AI.</i></p>
+
+<pre xml:space="preserve">
+  @article{luo2025emergent,
+    title={Emergent Active Perception and Dexterity of Simulated Humanoids from Visual Reinforcement Learning},
+    author={Luo, Zhengyi and Tessler, Chen and Lin, Toru and Yuan, Ye and He, Tairan and Xiao, Wenli and Guo, Yunrong and Chechik, Gal and Kitani, Kris and Fan, Linxi and others},
+    journal={arXiv preprint arXiv:2505.12278},
+    year={2025}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
   <tr>
     <td width="40%" valign="top" align="center"><a href="https://human-as-robot.github.io/">
     <video playsinline autoplay loop muted src="images/hat/hat_demo.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
@@ -165,7 +287,7 @@
       <p><a href="https://human-as-robot.github.io/" id="HAT">
       <heading>Humanoid Policy ~ Human Policy</heading></a><br>
       Ri-Zhao Qiu*, Shiqi Yang*, Xuxin Cheng*, Chaitanya Chawla, Jialong Li, Tairan He, Ge Yan, David J. Yoon, Ryan Hoque, Lars Paulsen, Ge Yang, Jian Zhang, Sha Yi, Guanya Shi, Xiaolong Wang<br>
-      2025<br>
+      CoRL 2025<br>
       </p>
       <div class="paper" id="hat">
       <a href="https://human-as-robot.github.io/">webpage</a> |
@@ -190,6 +312,93 @@
       </div>
     </td>
   </tr>
+
+
+
+
+
+
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://lecar-lab.github.io/spi-active_/">
+    <video playsinline autoplay loop muted src="images/spi-active/fj_spi-active.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://lecar-lab.github.io/spi-active_/" id="SPI-ACTIVE">
+      <heading>Sampling-Based System Identification with Active Exploration for Legged Robot Sim2Real Learning</heading></a><br>
+      Nikhil Sobanbabu, Guanqi He, Tairan He, Yuxiang Yang, Guanya Shi<br>
+      CoRL 2025<br>
+      </p>
+      <div class="paper" id="spi-active">
+      <a href="https://lecar-lab.github.io/spi-active_/">webpage</a> |
+      <a href="https://arxiv.org/abs/2505.14266">pdf</a> |
+      <a href="javascript:toggleblock('spi-active_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('spi-active')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2505.14266">arXiv</a> |
+      <a href="https://github.com/LeCAR-Lab/SPI-Active">code</a> 
+
+      
+
+      <p align="justify"> <i id="spi-active_abs">Sim-to-real discrepancies hinder learning-based policies from achieving high-precision tasks in the real world. While Domain Randomization (DR) is commonly used to bridge this gap, it often relies on heuristics and can lead to overly conservative policies with degrading performance when not properly tuned. System Identification (Sys-ID) offers a targeted approach, but standard techniques rely on differentiable dynamics and/or direct torque measurement, assumptions that rarely hold for contact-rich legged systems. To this end, we present SPI-Active (Sampling-based Parameter Identification with Active Exploration), a two-stage framework that estimates physical parameters of legged robots to minimize the sim-to-real gap. SPI-Active robustly identifies key physical parameters through massive parallel sampling, minimizing state prediction errors between simulated and real-world trajectories. To further improve the informativeness of collected data, we introduce an active exploration strategy that maximizes the Fisher Information of the collected real-world trajectories via optimizing the input commands of an exploration policy. This targeted exploration leads to accurate identification and better generalization across diverse tasks. Experiments demonstrate that SPI-Active enables precise sim-to-real transfer of learned policies to the real world, outperforming baselines by 42-63% in various locomotion tasks.</i></p>
+
+<pre xml:space="preserve">
+  @article{sobanbabu2025sampling,
+    title={Sampling-based system identification with active exploration for legged robot sim2real learning},
+    author={Sobanbabu, Nikhil and He, Guanqi and He, Tairan and Yang, Yuxiang and Shi, Guanya},
+    journal={arXiv preprint arXiv:2505.14266},
+    year={2025}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://lecar-lab.github.io/SoFTA/">
+    <video playsinline autoplay loop muted src="images/softa/hold-my-beer-push-1.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://lecar-lab.github.io/SoFTA/" id="SOFTA">
+      <heading>Hold My Beer: Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control</heading></a><br>
+      Yitang Li, Yuanhang Zhang, Wenli Xiao, Chaoyi Pan, Haoyang Weng, Guanqi He, Tairan He, Guanya Shi<br>
+      CoRL 2025<br>
+      </p>
+      <div class="paper" id="softa">
+      <a href="https://lecar-lab.github.io/SoFTA/">webpage</a> |
+      <a href="https://arxiv.org/abs/2505.24198">pdf</a> |
+      <a href="javascript:toggleblock('softa_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('softa')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2505.24198">arXiv</a> |
+      <a href="https://github.com/LeCAR-Lab/SoFTA">code</a> 
+
+      
+
+      <p align="justify"> <i id="softa_abs">Can your humanoid walk up and hand you a full cup of beer, without spilling a drop? While humanoids are increasingly featured in flashy demos like dancing, delivering packages, traversing rough terrain, fine-grained control during locomotion remains a significant challenge. In particular, stabilizing a filled end-effector (EE) while walking is far from solved, due to a fundamental mismatch in task dynamics: locomotion demands slow-timescale, robust control, whereas EE stabilization requires rapid, high-precision corrections. To address this, we propose SoFTA, a Slow-Fast Two-Agent framework that decouples upper-body and lower-body control into separate agents operating at different frequencies and with distinct rewards. This temporal and objective separation mitigates policy interference and enables coordinated whole-body behavior. SoFTA executes upper-body actions at 100 Hz for precise EE control and lower-body actions at 50 Hz for robust gait. It reduces EE acceleration by 2-5x relative to baselines and performs much closer to human-level stability, enabling delicate tasks such as carrying nearly full cups, capturing steady video during locomotion, and disturbance rejection with EE stability.</i></p>
+
+<pre xml:space="preserve">
+  @inproceedings{li2025hold,
+    title={Hold My Beer: Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control},
+    author={Li, Yitang and Zhang, Yuanhang and Xiao, Wenli and Pan, Chaoyi and Weng, Haoyang and He, Guanqi and He, Tairan and Shi, Guanya},
+    booktitle={RSS 2025 Workshop on Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+
+
 
   <tr>
     <td width="40%" valign="top" align="center"><a href="https://agile.human2humanoid.com/">
@@ -1037,6 +1246,21 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('hat_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('spi-active_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('softa_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('pdc_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('hdmi_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('falcon_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('h2o_abs');
