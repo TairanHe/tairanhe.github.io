@@ -204,6 +204,38 @@
 
 
 
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://ieeexplore.ieee.org/document/10993073">
+      <img src="images/arch.png" alt="PreVV Architecture" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;">
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://ieeexplore.ieee.org/document/10993073" id="PREVV">
+      <heading>PreVV: Eliminating Store Queue via Premature Value Validation for Dataflow Circuit on FPGA</heading></a><br>
+      Kuangjie Zou; Yifan Zhang; Zicheng Zhang; Guoyu Li; Jianli Chen; Kun Wang; Jun Yu<br>
+      DATE 2025<br>
+      </p>
+      <div class="paper" id="prevv">
+      <a href="https://ieeexplore.ieee.org/document/10993073">pdf</a> |
+      <a href="javascript:toggleblock('prevv_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('prevv')" class="togglebib">bibtex</a>
+
+      <p align="justify"> <i id="prevv_abs">Dynamic scheduling in high-level synthesis (HLS) maximizes pipeline performance by enabling out-of-order scheduling of load and store requests at runtime. However, this method introduces unpredictable memory dependencies, leading to data disambiguation challenges. Load-store queues (LSQs), commonly used in superscalar CPUs, offer a potential solution for HLS. How-ever, LSQs in dynamically scheduled HLS implementations often suffer from high resource overhead and scalability limitations. In this paper, we introduce PreVv, an architecture based on premature value validation designed to address memory disambiguation with minimal resource overhead. Our approach substitutes LSQ with several PreVv components and a straightforward premature queue. We prevent potential deadlocks by incorporating a specific tag that can send ‘fake’ tokens to prevent the accumulation of outdated data. Furthermore, we demonstrate that our design has scalability potential. We implement our design using several hardware templates and an LLVM pass to generate targeted dataflow circuits with PreVv. Experimental results on various benchmarks with data hazards show that, compared to state-of-the-art dynamic HLS, PreVV16 (a version with a premature queue depth of 16) reduces LUT usage by 43.91% and FF usage by 33.09%, with minimal impact on timing performance. Meanwhile, PreVV64 (a version with a premature queue depth of 64) reduces LUT usage by 27.21% and FF usage by 33.10%, without affecting timing performance.</i></p>
+
+<pre xml:space="preserve">
+@INPROCEEDINGS{10993073,
+  author={Zou, Kuangjie and Zhang, Yifan and Zhang, Zicheng and Li, Guoyu and Chen, Jianli and Wang, Kun and Yu, Jun},
+  booktitle={2025 Design, Automation & Test in Europe Conference (DATE)}, 
+  title={PreVV: Eliminating Store Queue via Premature Value Validation for Dataflow Circuit on FPGA}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-7},
+  keywords={Out of order;Runtime;Scalability;Circuits;Pipelines;System recovery;Dynamic scheduling;Timing;Table lookup;Field programmable gate arrays;high-level synthesis;dataflow circuits;load-store queue;FPGA},
+  doi={10.23919/DATE64628.2025.10993073}}
+</pre>
+      </div>
+    </td>
+  </tr>
 
 <hr/>
 
@@ -223,6 +255,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('flash_mono_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('prevv_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('material_review_abs');
