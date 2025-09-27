@@ -72,6 +72,34 @@
   <meta name="Zicheng Zhang's Homepage" http-equiv="Content-Type" content="Zicheng Zhang's Homepage">
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
   
+  <!-- Google tag (GA4) - Replace G-XXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P38NZLFHKW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-P38NZLFHKW');
+  </script>
+  <!-- Track outbound link clicks -->
+  <script>
+    document.addEventListener('click', function (event) {
+      var anchor = event.target && event.target.closest && event.target.closest('a[href]');
+      if (!anchor) return;
+      try {
+        var url = new URL(anchor.href);
+        if (url.host && url.host !== window.location.host) {
+          if (typeof gtag === 'function') {
+            gtag('event', 'click', {
+              event_category: 'outbound',
+              event_label: url.href,
+              transport_type: 'beacon'
+            });
+          }
+        }
+      } catch (e) { /* ignore invalid URLs */ }
+    }, true);
+  </script>
+  
   <!-- Scramble Script by Jeff Donahue -->
   
 </head>
