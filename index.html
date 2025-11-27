@@ -86,7 +86,7 @@
   <tr>
     <td width="30%" valign="top"><a href="images/tairan&h1_crop.JPG"><img src="images/tairan&h1_crop.JPG" width="100%" style="border-radius:15px"></a>
     <p align=center>
-    | <a href="data/TairanHe_CV_20250922.pdf">CV</a> |
+    | <a href="data/TairanHe_CV_20251127.pdf">CV</a> |
     <a href="mailto:tairanh@andrew.cmu.edu">Email</a> |
     <a href="https://scholar.google.com/citations?user=TVWH2U8AAAAJ">Google Scholar</a> |
     <br/>
@@ -164,7 +164,7 @@
     <td width="60%" valign="top">
       <p><a href="https://viral-humanoid.github.io/" id="VIRAL">
       <heading>VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation</heading></a><br>
-      Tairan He*, Zi Wang*, Haoru Xue*, Qingwei Ben*, Zhengyi Luo, Wenli Xiao, Ye Yuan, Xingye Da, Fernando Castañeda, Shankar Sastry, Changliu Liu, Guanya Shi, Linxi Fan†, Yuke Zhu†<br>
+      Tairan He*, Zi Wang*, Haoru Xue*, Qingwei Ben*, Zhengyi Luo, Wenli Xiao, Ye Yuan, Xingye Da, Fernando Castañeda, Shankar Sastry, Changliu Liu, Guanya Shi, Linxi "Jim" Fan†, Yuke Zhu†<br>
       2025<br>
       </p>
       <div class="paper" id="hdmi">
@@ -190,6 +190,41 @@
     </td>
   </tr>
 
+
+
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://nvlabs.github.io/SONIC/">
+    <video playsinline autoplay loop muted src="images/sonic/sonic-preview_576P.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://nvlabs.github.io/SONIC/" id="SONIC">
+      <heading>SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control</heading></a><br>
+      Zhengyi Luo*, Ye Yuan*, Tingwu Wang*, Chenran Li*, Sirui Chen, Fernando Castañeda, Zi-Ang Cao, Jiefeng Li, David Minor, Qingwei Ben, Xingye Da, Runyu Ding, Cyrus Hogg, Lina Song, Edy Lim, Eugene Jeong, Tairan He, Haoru Xue, Wenli Xiao, Zi Wang, Simon Yuen, Jan Kautz, Yan Chang, Umar Iqbal, Linxi ``Jim" Fan†, Yuke Zhu†<br>
+      2025<br>
+      </p>
+      <div class="paper" id="hdmi">
+      <a href="https://nvlabs.github.io/SONIC/">webpage</a> |
+      <a href="https://arxiv.org/abs/2511.07820">pdf</a> |
+      <a href="javascript:toggleblock('sonic_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('sonic')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2511.07820">arXiv</a>  
+
+      
+
+      <p align="justify"> <i id="sonic_abs">Despite the rise of billion-parameter foundation models trained across thousands of GPUs, similar scaling gains have not been shown for humanoid control. Current neural controllers for humanoids remain modest in size, target a limited behavior set, and are trained on a handful of GPUs over several days. We show that scaling up model capacity, data, and compute yields a generalist humanoid controller capable of creating natural and robust whole-body movements. Specifically, we posit motion tracking as a natural and scalable task for humanoid control, leverageing dense supervision from diverse motion-capture data to acquire human motion priors without manual reward engineering. We build a foundation model for motion tracking by scaling along three axes: network size (from 1.2M to 42M parameters), dataset volume (over 100M frames, 700 hours of high-quality motion data), and compute (9k GPU hours). Beyond demonstrating the benefits of scale, we show the practical utility of our model through two mechanisms: (1) a real-time universal kinematic planner that bridges motion tracking to downstream task execution, enabling natural and interactive control, and (2) a unified token space that supports various motion input interfaces, such as VR teleoperation devices, human videos, and vision-language-action (VLA) models, all using the same policy. Scaling motion tracking exhibits favorable properties: performance improves steadily with increased compute and data diversity, and learned representations generalize to unseen motions, establishing motion tracking at scale as a practical foundation for humanoid control.</i></p>
+
+<pre xml:space="preserve">
+  @article{luo2025sonic,
+    title={SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control},
+    author={Luo, Zhengyi and Yuan, Ye and Wang, Tingwu and Li, Chenran and Chen, Sirui and Casta\~neda, Fernando and Cao, Zi-Ang and Li, Jiefeng and Minor, David and Ben, Qingwei and Da, Xingye and Ding, Runyu and Hogg, Cyrus and Song, Lina and Lim, Edy and Jeong, Eugene and He, Tairan and Xue, Haoru and Xiao, Wenli and Wang, Zi and Yuen, Simon and Kautz, Jan and Chang, Yan and Iqbal, Umar and Fan, Linxi and Zhu, Yuke},
+    journal={arXiv preprint arXiv:2511.07820},
+    year={2025}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
 
 
 
@@ -1299,6 +1334,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('viral_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('sonic_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('hdmi_abs');
