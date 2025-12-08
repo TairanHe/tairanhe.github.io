@@ -158,6 +158,43 @@
 
 
   <tr>
+    <td width="40%" valign="top" align="center"><a href="https://doorman-humanoid.github.io/">
+    <video playsinline autoplay loop muted src="images/doorman/doorman-teaser-576P.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://doorman-humanoid.github.io/" id="DOORMAN">
+      <heading>Opening the Sim-to-Real Door for Humanoid Pixel-to-Action Policy Transfer</heading></a><br>
+      Haoru Xue*, Tairan He*, Zi Wang*, Qingwei Ben, Wenli Xiao, Zhengyi Luo, Xingye Da, Fernando Castañeda, Guanya Shi, Shankar Sastry, Linxi "Jim" Fan†, Yuke Zhu†<br>
+      2025<br>
+      </p>
+      <div class="paper" id="doorman">
+      <a href="https://doorman-humanoid.github.io/">webpage</a> |
+      <a href="https://arxiv.org/abs/2512.01061">pdf</a> |
+      <a href="javascript:toggleblock('doorman_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('doorman')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/abs/2512.01061">arXiv</a>  
+
+      
+
+      <p align="justify"> <i id="doorman_abs">Recent progress in GPU-accelerated, photorealistic simulation has opened a scalable data-generation path for robot learning, where massive physics and visual randomization allow policies to generalize beyond curated environments. Building on these advances, we develop a teacher-student-bootstrap learning framework for vision-based humanoid loco-manipulation, using articulated-object interaction as a representative high-difficulty benchmark. Our approach introduces a staged-reset exploration strategy that stabilizes long-horizon privileged-policy training, and a GRPO-based fine-tuning procedure that mitigates partial observability and improves closed-loop consistency in sim-to-real RL. Trained entirely on simulation data, the resulting policy achieves robust zero-shot performance across diverse door types and outperforms human teleoperators by up to 31.7% in task completion time under the same whole-body control stack. This represents the first humanoid sim-to-real policy capable of diverse articulated loco-manipulation using pure RGB perception.</i></p>
+
+<pre xml:space="preserve">
+  @article{xue2025openingsimtorealdoorhumanoid,
+    title={Opening the Sim-to-Real Door for Humanoid Pixel-to-Action Policy Transfer},
+    author={Haoru Xue and Tairan He and Zi Wang and Qingwei Ben and Wenli Xiao and Zhengyi Luo and Xingye Da and Fernando Castañeda and Guanya Shi and Shankar Sastry and Linxi "Jim" Fan and Yuke Zhu},
+    year={2025},
+    eprint={2512.01061},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2512.01061}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+  <tr>
     <td width="40%" valign="top" align="center"><a href="https://viral-humanoid.github.io/">
     <video playsinline autoplay loop muted src="images/viral/viral-for-preview-v2-576P.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
     </a></td>
@@ -167,7 +204,7 @@
       Tairan He*, Zi Wang*, Haoru Xue*, Qingwei Ben*, Zhengyi Luo, Wenli Xiao, Ye Yuan, Xingye Da, Fernando Castañeda, Shankar Sastry, Changliu Liu, Guanya Shi, Linxi "Jim" Fan†, Yuke Zhu†<br>
       2025<br>
       </p>
-      <div class="paper" id="hdmi">
+      <div class="paper" id="viral">
       <a href="https://viral-humanoid.github.io/">webpage</a> |
       <a href="https://arxiv.org/abs/2511.15200">pdf</a> |
       <a href="javascript:toggleblock('viral_abs')">abstract</a> |
@@ -1334,6 +1371,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('viral_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('doorman_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('sonic_abs');
